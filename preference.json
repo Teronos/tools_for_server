@@ -1,0 +1,21 @@
+{
+  "LIST_OF_PATH": [],
+  "FREQUENCY_RUN": {
+    "second": 0,
+    "minuet": 0,
+    "hour": 0,
+    "day": 0,
+    "week": 1,
+    "month": 0,
+    "year": 0
+  },
+  "LIFE_TIME": {
+    "second": 0,
+    "minuet": 0,
+    "hour": 0,
+    "day": 5,
+    "week": 0,
+    "month": 1,
+    "year": 0
+  }
+}
