@@ -9,16 +9,15 @@ def check_directory(path: str):
         return time.time() - os.stat(path_to_file).st_mtime > config.life_time
 
     def rm_files(path_file) -> int:
-        if os.path.isfile(path_file):
+        try:
             os.remove(path_file)
             return 1
-        return 0
-    try:
-        paths_files_from_directory = list(map(lambda x: f"{path}/{x}", os.listdir(path)))
-        count = sum(list(map(rm_files, list(filter(filter_elder, paths_files_from_directory)))))
-        print(f"remove {count} files")
-    except FileNotFoundError:
-        print(f"No such file or directory: {path}")
+        except FileNotFoundError:
+            print(f"No such file or directory: {path}")
+
+    paths_files_from_directory = list(map(lambda x: f"{path}/{x}", os.listdir(path)))
+    count = sum(list(map(rm_files, list(filter(filter_elder, paths_files_from_directory)))))
+    print(f"remove {count} files")
 
 
 def run():
@@ -32,4 +31,3 @@ if __name__ == '__main__':
     if config.LIST_OF_PATH != ['not_exist_directory'] and len(config.LIST_OF_PATH) != 0:
         run()
     raise FileNotFoundError(f'you need included directories on {Preference.PATH_WITH_PREFERENCE}')
-
