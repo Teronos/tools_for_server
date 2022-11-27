@@ -6,7 +6,7 @@ from src.basic_struct import Preference
 
 def check_directory(path: str):
     def filter_elder(path_to_file: str) -> bool:
-        return time.time() - os.stat(path_to_file).st_mtime > config.life_time
+        return time.time() - os.stat(path_to_file).st_mtime > config.LIFE_TIME
 
     def rm_files(path_file) -> int:
         try:
@@ -27,6 +27,7 @@ def run():
 
 
 if __name__ == '__main__':
+    global config
     config = Preference.load_preference_from()
     if config.LIST_OF_PATH != ['not_exist_directory'] and len(config.LIST_OF_PATH) != 0:
         run()
