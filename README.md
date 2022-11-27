@@ -81,6 +81,6 @@ and running command
 ```bash
 sudo chmod 644 /lib/systemd/system/deliter.service
 sudo systemctl daemon-reload
-sudo systemctl enable myservice.service
+sudo systemctl enable deliter.service
 ```
 In conclusion, now you're using  script as systemd.service.
