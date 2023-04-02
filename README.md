@@ -15,7 +15,7 @@ in the file `./preference.json` and looks like this:
   "LIST_OF_PATH": ["./dir_1", "./dir_2"],
   "FREQUENCY_RUN": {
     "seconds": 0,
-    "minuts": 0,
+    "minutes": 0,
     "hours": 0,
     "days": 0,
     "weeks": 2,
@@ -24,7 +24,7 @@ in the file `./preference.json` and looks like this:
   },
   "LIFE_TIME": {
     "seconds": 0,
-    "minuts": 0,
+    "minutes": 0,
     "hours": 0,
     "days": 5,
     "weeks": 0,
