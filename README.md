@@ -14,22 +14,22 @@ in the file `./preference.json` and looks like this:
 {
   "LIST_OF_PATH": ["./dir_1", "./dir_2"],
   "FREQUENCY_RUN": {
-    "second": 0,
-    "minuet": 0,
-    "hour": 0,
-    "day": 0,
-    "week": 2,
-    "month": 0,
-    "year": 0
+    "seconds": 0,
+    "minuts": 0,
+    "hours": 0,
+    "days": 0,
+    "weeks": 2,
+    "months": 0,
+    "years": 0
   },
   "LIFE_TIME": {
-    "second": 0,
-    "minuet": 0,
-    "hour": 0,
-    "day": 5,
-    "week": 0,
-    "month": 1,
-    "year": 0
+    "seconds": 0,
+    "minuts": 0,
+    "hours": 0,
+    "days": 5,
+    "weeks": 0,
+    "months": 1,
+    "years": 0
   }
 }
 ```
