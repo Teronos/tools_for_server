@@ -32,13 +32,13 @@ class Time:
     data: dict = {}
 
     __coversion_to_second = {
-        "second": 1,
-        "minuet": 60,
-        "hour": 3_600,
-        "day": 86_400,
-        "week": 604_800,
-        "month": 2_678_400,
-        "year": 31_622_400,
+        "seconds": 1,
+        "minutes": 60,
+        "hours": 3_600,
+        "days": 86_400,
+        "weeks": 604_800,
+        "months": 2_678_400,
+        "years": 31_622_400,
     }
 
     def __init__(self, data: dict):
